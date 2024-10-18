@@ -57,7 +57,6 @@ with torch.no_grad():
 
     original_hps = image_features @ text_features.T
 
-#original_score = hpsv2.score("original_image.png", prompt, hps_version="v2.1")[0]
 print(f"Hpsv2 Original Score: {original_score:.2f}")
 print(f"Hpsv1 Original Score: {original_hps.item():.2f}")
 
@@ -101,11 +100,9 @@ print(f"Hpsv1 Adversarial Score: {adv_hps.item():.2f}")
 fig, axes = plt.subplots(1, 2, figsize=(10, 5))
 
 axes[0].imshow(Image.open("original_image.png"))
-#axes[0].set_title(f"Original Score: {original_score:.2f}", fontsize=14)
 axes[0].axis("off")
 
 axes[1].imshow(Image.open("adv_image.png"))
-#axes[1].set_title(f"Adversarial Score: {adv_score:.2f}", fontsize=14)
 axes[1].axis("off")
 
 plt.show()
