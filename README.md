@@ -9,7 +9,7 @@ pip install diffusers transformers accelerate scipy safetensors\
 \
 \
 You need the hpc.pt file for HPSv1\
-go to https://github.com/tgxs002/align_sd?tab=readme-ov-file\
+go to https://github.com/tgxs002/align_sd?tab=readme-ov-file \
 and follow their instructions \
 make sure the file is in the same location as the python file\
 \
